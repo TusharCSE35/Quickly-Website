@@ -7,13 +7,16 @@
     <link rel="icon" href="images/quickly-tittle-image.png" type="images/x-icon">
     <link rel="stylesheet" href="style/navbar-style.css">
     <link rel="stylesheet" href="style/footer-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <!-- Navbar -->
     <nav>
         <ul>
-            <li><a href="#"><img src="images/quickly-logo.png" alt=""></a></li>
-            <li>Products &#9662;
-                <ul>
+            <li><a href="#"><img src="images/quickly-logo.png" alt="Quickly Logo"></a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-btn">Products &#9662;</a>
+                <ul class="dropdown-menu">
                     <li>
                         <img src="images/restrogreen.png" alt="">
                         <a href="#">RestroGreen</a>
@@ -37,13 +40,15 @@
             <li><a href="#">Community</a></li>
             <li><a href="#">Support</a></li>
             <div class="right-items">
-                <li><a href="#">Customers &#9662;  </a>
-                    <ul>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-btn">Customers &#9662;</a>
+                    <ul class="dropdown-menu">
                         <li><a href="#">RestroGreen Login</a></li>
                         <li><a href="#">RetailGo Login</a></li>
                         <li><a href="#">OneOffice Login</a></li>
                         <li><a href="#">LocoShop Login</a></li>
-                        <li><a href="#">Create a Support Ticket</a></li>
+                        <!-- <li><a href="#">Create a Support Ticket</a></li>
+                        <li><a href="#">Create a Support Ticket</a></li> -->
                     </ul>
                 </li>
                 <li><a href="#">Get Started</a></li>
@@ -51,7 +56,10 @@
         </ul>
     </nav>
 
+    <!-- Content Section -->
     <h1>This is section part</h1>
+
+    <!-- Footer -->
     <footer>
         <div class="footer-left">
             <div class="footer-column">
@@ -112,19 +120,24 @@
                 </ul>
             </div>
         </div>
+        <!-- Footer Right with Social Icons -->
         <div class="footer-right">
-            <h4>Hal-Mars (4th Floor), 5 Shaheed Sangbadik Salina Parveen Sarak,</h4>
-            <h4>Moghbazar, Dhaka-1217, Bangladesh</h4>
-            <h4>Phone: +880 249362894, +880 1309989340</h4>
-            <h4>Email: info@quicklyservices.com</h4>
-            <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">LinkedIn</a></li>
-            </ul>
+            <p>Hal-Mars (4th Floor), 5 Shaheed Sangbadik Salina Parveen Sarak,</p>
+            <p>Moghbazar, Dhaka-1217, Bangladesh</p>
+            <p>Phone: +880 249362894, +880 1309989340</p>
+            <p>Email: info@quicklyservices.com</p>
+            
+            <!-- Social Media Icons -->
+            <div class="social-icons">
+                <a href="https://www.facebook.com/quicklyofficial" class="fab fa-facebook"></a>
+                <a href="https://www.youtube.com/channel/UCBfhHHQvTlxlnyYfNyz9JjQ?view_as=subscriber" class="fab fa-youtube"></a>
+                <a href="https://www.instagram.com/quicklyservices/" class="fab fa-instagram"></a>
+                <a href="https://www.linkedin.com/company/quicklyofficial" class="fab fa-linkedin"></a>
+            </div>
+
+            <p>Copyrigth &copy; 2025 by Quickly Services. All rights reserved.</p>
         </div>
+
     </footer>
-    
 </body>
 </html>
