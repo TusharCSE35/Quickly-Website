@@ -64,7 +64,7 @@ nav ul li ul {
     left: 0;
     background-color: white;
     color: black;
-    width: auto;
+    width: 180px;
     padding: 10px 0;
     border-radius: 10px;
     height: auto;
@@ -117,31 +117,54 @@ nav .right-items li:last-child a {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Customers Dropdown Menu */
+nav .dropdown-1 > ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    color: black;
+    width: 180px;
+    padding: 10px 0;
+    border-radius: 10px;
+    height: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Dropdown Items */
+nav .dropdown-1 ul li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 15px;
+    margin: 0;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover Effects */
+nav .dropdown-1 ul li:hover {
+    background-color: #eff4f5;
+}
+
+nav .dropdown-1 ul li:hover a {
+    color: black;
+}
+
+/* Show Dropdown */
+nav .dropdown-1:hover > ul {
+    display: block;
+}
+
 /* Hover effect for "Get Started" box */
 nav .right-items li:last-child a:hover {
     background-color: #f0f0f0; 
     color: black; 
 }
 
-/* Dropdown Menu Styling for Customers */
-nav ul li ul {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: rgb(250, 248, 248);
-    color: black;
-    width: 200px; 
-    padding: 10px 0;
-    border-radius: 3px; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-
 nav ul li:hover > ul {
     display: block;
 }
-
 
 nav ul li ul li:hover {
     background-color: #eff4f5; 
