@@ -1,3 +1,10 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Section 1 Styles */
 .section-1 {
     height: 100vh; 
@@ -127,41 +134,538 @@
 }
 
 
+/* General styles for sections 3, 4, 5, 6 */
 .section-3, .section-4, .section-5, .section-6 {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
+    align-items: stretch; 
+    margin: 65px 60px;
+    padding: 0 80px; 
+    gap: 0;
 }
 
-.image-container {
-    flex: 1;
+/* Text container styles */
+.section-3 .text-container,
+.section-4 .text-container,
+.section-5 .text-container,
+.section-6 .text-container {
+    flex: 1; 
+    text-align: left; 
+    padding: 20px 0;
+    background-color: rgba(240, 240, 240, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+/* Image container styles */
+.section-3 .image-container,
+.section-4 .image-container,
+.section-5 .image-container,
+.section-6 .image-container {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+}
+
+/* Swap image and text positions for alternate sections */
+.section-4 .image-container, 
+.section-6 .image-container {
+    order: 1;
+}
+
+/* Text styles */
+.section-3 h1, 
+.section-4 h1, 
+.section-5 h1, 
+.section-6 h1 {
+    font-size: 2rem;
+    font-weight: normal;
+    margin-bottom: 15px;
+    margin-left: 60px;
+    margin-right: 60px;
+    color: #333;
+}
+
+.section-3 p, 
+.section-4 p, 
+.section-5 p, 
+.section-6 p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin: 10px 60px;
+}
+
+/* Image styles */
+.section-3 img, 
+.section-4 img, 
+.section-5 img, 
+.section-6 img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    display: block;
+}
+
+/* General styles for section-7 */
+.section-7 {
+    margin: 65px 60px; 
+    padding: 10px 80px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.text-container {
-    flex: 1;
+/* Content container styles */
+.section-7 .content-container {
+    text-align: center; 
+    max-width: 1250px; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 20px; 
+}
+
+/* Heading styles */
+.section-7 h1 {
+    font-size: 2rem;
+    font-weight: normal; 
+    color: #333;
+}
+
+/* Paragraph styles */
+.section-7 p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Image styles */
+.section-7 img {
+    width: 50%; 
+    height: auto; 
+    display: block;
+}
+
+/* General styles for section-8 */
+.section-8 {
+    margin: 65px 0;
+    padding: 50px 80px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cadetblue;
+    flex-direction: column; 
+  }
+  
+  /* Content container styles */
+  .section-8 .content-container {
+    margin: 50px 150px;
+    text-align: center;
+    max-width: 1250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  /* Heading styles */
+  .section-8 h1 {
+    font-size: 2rem;
+    font-weight: normal;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  /* Paragraph styles */
+  .section-8 p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: white;
+    margin-bottom: 40px; 
+  }
+  
+
+/* General styles for section-9 */
+.section-9 {
+    margin: 65px 0;
+    padding: 50px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; 
+    height: 400px; 
+  }
+  
+  /* Image container styling */
+  .section-9 .image-container {
+    position: relative;
+    width: 300px; 
+    height: 300px; 
+  }
+  
+  /* Random image styling */
+  .section-9 .random-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    animation: changeImage 4s infinite; 
+  }
+  
+  /* Keyframes to change images using base64 */
+  @keyframes changeImage {
+    0% {
+      background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAACAQAAAD8S8ozAAAAmklEQVRIDbXBAQEAAAABIP6PzgpV1H1gBhp0VLPZwFi7xUz9pa1aISFgAAAABJRU5ErkJggg=='); /* Base64 image 1 */
+      opacity: 1;
+    }
+    25% {
+      background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAACAQAAAD8S8ozAAAAmklEQVRIDbXBAQEAAAABIP6PzgpV1H1gBhp0VLPZwFi7xUz9pa1aISFgAAAABJRU5ErkJggg=='); /* Base64 image 2 */
+      opacity: 1;
+    }
+    50% {
+      background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAACAQAAAD8S8ozAAAAmklEQVRIDbXBAQEAAAABIP6PzgpV1H1gBhp0VLPZwFi7xUz9pa1aISFgAAAABJRU5ErkJggg=='); /* Base64 image 3 */
+      opacity: 1;
+    }
+    75% {
+      background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAACAQAAAD8S8ozAAAAmklEQVRIDbXBAQEAAAABIP6PzgpV1H1gBhp0VLPZwFi7xUz9pa1aISFgAAAABJRU5ErkJggg=='); /* Base64 image 4 */
+      opacity: 1;
+    }
+    100% {
+      background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAACAQAAAD8S8ozAAAAmklEQVRIDbXBAQEAAAABIP6PzgpV1H1gBhp0VLPZwFi7xUz9pa1aISFgAAAABJRU5ErkJggg=='); /* Base64 image 1 */
+      opacity: 1;
+    }
+  }
+  
+
+/* General section styling */
+.section-10 {
+    margin: 65px 0;
+    padding: 70px 0;
+    text-align: center; 
+    background-color: #f2f8f6;
+}
+
+/* Container styles */
+.section-10 .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 40px;
+    max-width: calc(100% - 160px); 
+    margin: 0 auto; 
+}
+
+/* Heading and paragraph */
+.section-10 h1 {
+    font-size: 2rem;
+    font-weight: normal;
+    color: #333;
+}
+
+.section-10 p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: black;
+    max-width: 1200px; 
+    text-align: center; 
+}
+
+/* Boxes container */
+.section-10 .boxes-container {
+    display: flex;
+    justify-content: center; 
+    align-items: stretch;
+    gap: 20px; 
+    flex-wrap: wrap; 
+    width: calc(100% - 160px);
+    margin: 0 auto; 
+}
+
+/* Individual box styles */
+.section-10 .box {
+    flex: 1 1 calc(25% - 20px); 
+    text-align: center;
+    padding: 40px;  
+    border-radius: 8px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: white;
+    max-width: 350px;  
+    min-height: 350px; 
+}
+
+/* Icon styling */
+.section-10 .icon {
+    margin-bottom: 30px;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image icon styling */
+.section-10 .icon img {
+    width: 100%;  
+    height: auto;
+    object-fit: contain;
+}
+
+/* Try Free button styling */
+.section-10 .box a {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 12px 25px;
+    color: white;
+    background-color: #2ecc71; 
+    border: 2px solid #2ecc71;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+.section-10 .box-1 a {
+    background-color: white;
+    border-color: seagreen;
+    color: seagreen;
+}
+
+.section-10 .box-2 a {
+    background-color: white;
+    border-color:#1261a2;
+    color: #1261a2;
+}
+
+.section-10 .box-3 a {
+    background-color: white;
+    border-color: #6d1a7d;
+    color: #6d1a7d;
+}
+
+.section-10 .box-4 a {
+    background-color: white;
+    border-color:#677404;
+    color: #677404;
+}
+
+/* Hover effect for box-1 (Green color) */
+.section-10 .box-1 a:hover {
+    background-color: seagreen;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Hover effect for box-2 (Blue color) */
+.section-10 .box-2 a:hover {
+    background-color: #1261a2;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Hover effect for box-3 (Red color) */
+.section-10 .box-3 a:hover {
+    background-color: #6d1a7d;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Hover effect for box-4 (Purple color) */
+.section-10 .box-4 a:hover {
+    background-color: #677404;
+    color: white;
+    transform: scale(1.05);
+}
+
+
+/* General section styling */
+.section-11 {
+    margin: 65px 60px;
+    padding: 0 80px;
+    text-align: center;
+  }
+  
+  .section-11 .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px; /* Space between text and images */
+  }
+  
+  .section-11 .text-container {
+    text-align: center;
+  }
+  
+  .section-11 .text-container h1 {
+    font-size: 2rem;
+    font-weight: normal;
+    margin-bottom: 20px;
+  }
+  
+  .section-11 .text-container p {
+    font-size: 1.1rem;
+    color: black;
+    margin: 0;
+  }
+  
+  /* Image container and heading styling */
+  .section-11 .image-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Added this to stack heading and images vertically */
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between heading and images */
+  }
+  
+  .section-11 .image-container h1 {
+    margin-top: 30px;
+    font-size: 2rem;
+    font-weight: normal;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .section-11 .image-container div {
+    display: flex;
+    flex-wrap: wrap; /* Allow images to wrap to the next line */
+    justify-content: center; /* Align images to the center */
+    gap: 15px; /* Space between images */
+  }
+  
+  .section-11 .image-container img {
+    margin: 20px 0;
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+    background-color: #f2f2f2;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+
+/* General section styling */
+.section-12 {
+    margin: 65px 60px;
+    padding: 0 80px;
     text-align: center;
 }
 
-.section-4 .image-container, .section-6 .image-container {
-    order: 1; 
+.section-12 a {
+    text-decoration: none;
+    color: inherit; 
+    display: block; 
 }
 
-h1 {
-    font-size: 2em;
-    margin-bottom: 15px;
+/* Container styles */
+.section-12 .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
 }
 
-p {
-    font-size: 1.2em;
+/* Heading and paragraph */
+.section-12 h1 {
+    font-size: 2rem;
+    font-weight: normal;
+    color: #333;
+}
+
+.section-12 p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    max-width: 800px;
+}
+
+/* Boxes container */
+.section-12 .boxes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Individual box styles */
+.section-12 .box {
+    flex: 1 1 calc(25% - 20px);
+    text-align: center;
+    padding: 40px;
+    border-radius: 8px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Alternating box background colors */
+.section-12 .box-1 {
+    background-color: green;
+    color: white; /* White text for h2 and p */
+}
+
+.section-12 .box-3 {
+    background-color: #1261a2;
+    color: white; /* White text for h2 and p */
+}
+
+.section-12 .box-2,
+.section-12 .box-4 {
+    background-color: #ffffff;
+    color: black; /* Black text for h2 and p */
+}
+
+/* Specific styles for h2 and p in boxes */
+.section-12 .box-1 h2,
+.section-12 .box-1 p,
+.section-12 .box-3 h2,
+.section-12 .box-3 p {
+    color: white;
+}
+
+.section-12 .box-2 h2,
+.section-12 .box-2 p,
+.section-12 .box-4 h2,
+.section-12 .box-4 p {
+    color: black;
+}
+
+/* Icon styling */
+.section-12 .icon {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+    margin-bottom: 15px; 
+}
+
+/* Icon image size */
+.section-12 .icon img {
+    width: 50px; 
+    height: 50px; 
+    object-fit: contain; 
+}
+
+/* Box heading */
+.section-12 h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* Box paragraph */
+.section-12 p {
+    font-size: 1.1rem;
     line-height: 1.5;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
+
+
 
